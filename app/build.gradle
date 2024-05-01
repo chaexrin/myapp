@@ -22,6 +22,14 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.3.2'
+
+    // 스프링 시큐리티
+    implementation "org.springframework.boot:spring-boot-starter-security"
+    implementation "org.thymeleaf.extras:thymeleaf-extras-springsecurity5"
+
+    // 롬복 관련 라이브러리
+    compileOnly 'org.projectlombok:lombok'
+
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     runtimeOnly 'com.mysql:mysql-connector-j'
