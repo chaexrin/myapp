@@ -50,6 +50,7 @@ public class MemberController implements InitializingBean {
       String filename = storageService.upload(this.bucketName, this.uploadDir, file);
       member.setPhoto(filename);
     }
+    member.setPassword(passwordEncoder.encode(member.getPassword()));
     memberService.add(member);
     return "redirect:list";
   }
